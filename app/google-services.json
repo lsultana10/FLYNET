@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "632716290521",
+    "firebase_url": "https://flynet-25b07.firebaseio.com",
+    "project_id": "flynet-25b07",
+    "storage_bucket": "flynet-25b07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632716290521:android:a86addcc41f286d09311c8",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632716290521-u8g5cd78ciuncpq1s1d2hdkfsjohh9al.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjQzP7zh7LLBp-Jua-9QfwdpEa0XFnJYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632716290521-u8g5cd78ciuncpq1s1d2hdkfsjohh9al.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
