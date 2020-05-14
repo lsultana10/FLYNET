@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TravelActivity"
+    android:background="@color/colorBackground"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="60dp"
+                android:text="Travel Interests"
+                android:textColor="@color/colorWhite"
+
+                android:textSize="35dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/cloche"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/luxury"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Luxury"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/location" />
+
+                    <CheckBox
+                        android:id="@+id/adventure"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:onClick="onCheckboxClicked"
+                        android:text="Adventure"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:src="@drawable/palm"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/beach"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Beach"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--Second Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/road"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/roadtrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Road Trip"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/outdoors"
+                    >
+                    <ImageView
+                        android:src="@drawable/tree"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/countryside"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Countryside"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/architectonic"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="City"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--End of Second Row-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

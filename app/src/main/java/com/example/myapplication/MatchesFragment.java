@@ -20,11 +20,8 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
-
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -76,17 +73,14 @@ public class MatchesFragment extends NavigationActivity {
         });
 
 
-
         getMatches();
-
 
 
 
     }
 
 
-
-
+   //method to retrieve matches added by user
     private void getMatches() {
 
         final FirebaseUser fUser = FirebaseAuth.getInstance().getCurrentUser();
@@ -101,7 +95,6 @@ public class MatchesFragment extends NavigationActivity {
 
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
                     Matches match = snapshot.getValue(Matches.class);
-
 
 
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nav_profile"
+        android:icon="@drawable/user"
+        android:tint="@color/colorBackground"
+        android:title="@string/profile"/>
+
+    <item android:id="@+id/nav_interests"
+        android:icon="@drawable/list"
+        android:tint="@color/colorBackground"
+        android:title="@string/interests"/>
+
+    <item android:id="@+id/nav_flights"
+        android:icon="@drawable/airplane"
+        android:tint="@color/colorBackground"
+        android:title="@string/flights"/>
+
+    <item android:id="@+id/nav_matches"
+        android:icon="@drawable/versus"
+        android:tint="@color/colorBackground"
+        android:title="@string/matches"/>
+
+    <item android:id="@+id/nav_messages"
+        android:icon="@drawable/email"
+        android:tint="@color/colorBackground"
+        android:title="@string/messages"/>
+
+
+
+
+
+</menu>

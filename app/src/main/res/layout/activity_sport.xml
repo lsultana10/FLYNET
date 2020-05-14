@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SportActivity"
+    android:background="@color/colorBackground"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="60dp"
+                android:text= "Sport Interests"
+                android:textColor="@color/colorWhite"
+                android:textSize="35dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/mfootball"
+                    >
+                    <ImageView
+                        android:src="@drawable/ball"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/football"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Football"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mbasketball"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/basketball" />
+
+                    <CheckBox
+                        android:id="@+id/basketball"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Basketball"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/mvolleyball">
+                    <ImageView
+                        android:src="@drawable/volleyball"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/volleyball"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Volleyball"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--Second Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/mrugby"
+                    >
+                    <ImageView
+                        android:src="@drawable/rugby"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/rugby"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Rugby"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/mtennis"
+                    >
+                    <ImageView
+                        android:src="@drawable/tennis"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/tennis"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Tennis"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/mswimming"
+                    >
+                    <ImageView
+                        android:src="@drawable/swimmer"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/swimming"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Swimming"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--End of Second Row-->
+
+            <!--Third Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/mgymnastics"
+                    >
+                    <ImageView
+                        android:src="@drawable/gymnastics"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/gymnastics"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Gymnastics"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/mhockey"
+                    >
+                    <ImageView
+                        android:src="@drawable/hockey"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/hockey"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hockey"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:id="@+id/marchery"
+                    >
+                    <ImageView
+                        android:src="@drawable/crossbow"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/archery"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Archery"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--End of Third Row-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,32 +1,20 @@
 package com.example.myapplication;
 
 import androidx.annotation.NonNull;
-
 import de.hdodenhof.circleimageview.CircleImageView;
-
 import android.app.DatePickerDialog;
-
 import android.content.Context;
-
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
-
 import android.content.Intent;
-import android.os.Environment;
-import android.provider.MediaStore;
-import android.util.Base64;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.webkit.MimeTypeMap;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -38,10 +26,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
 
@@ -99,12 +85,7 @@ public class MainActivity extends  NavigationActivity {
         storageRef = mStorage.getReferenceFromUrl("gs://flynet-25b07.appspot.com");//to get profile pic
         UsersRef = FirebaseDatabase.getInstance().getReference();
 
-
-
-
-
-
-
+        //method to display user data
         mUsersDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -145,7 +126,7 @@ public class MainActivity extends  NavigationActivity {
 
 
 
-
+        //button that leads to updating user profile
         updateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -156,7 +137,7 @@ public class MainActivity extends  NavigationActivity {
         });
     }
 
-
+    //method do delete user
     public void deleteUser(View view) {
         // [START delete_user]
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
@@ -177,7 +158,7 @@ public class MainActivity extends  NavigationActivity {
         // [END delete_user]
     }
 
-
+    //method to logout
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut();//logout
         startActivity(new Intent(getApplicationContext(), Login.class));

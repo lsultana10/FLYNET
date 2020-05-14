@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistoryActivity"
+    android:background="@color/colorBackground"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="60dp"
+                android:text= "History Interests"
+                android:textColor="@color/colorWhite"
+                android:textSize="35dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/politics"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/political"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Political"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/conversation" />
+
+                    <CheckBox
+                        android:id="@+id/social"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Social"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:src="@drawable/trade"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/economic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Economic"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--Second Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:src="@drawable/law"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/legal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Legal"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:src="@drawable/diplomat"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/diplomatic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Diplomatic"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/tank"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/military"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Military"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--End of Second Row-->
+
+            <!--Third Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/hand"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/intellectual"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Intellectual"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:src="@drawable/earth"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/universal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Universal"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--End of Third Row-->
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

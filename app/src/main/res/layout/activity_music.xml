@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistoryActivity"
+    android:background="@color/colorBackground"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingTop="60dp"
+                android:text= "Music Interests"
+                android:textColor="@color/colorWhite"
+                android:textSize="35dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/banjo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/country"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Country"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/rap" />
+
+                    <CheckBox
+                        android:id="@+id/hiphop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hip Hop"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:src="@drawable/saxophone"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/jazz"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Jazz"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--Second Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:src="@drawable/rock"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/rock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Rock"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+
+                    >
+                    <ImageView
+                        android:src="@drawable/piano"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/classical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Classical"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:src="@drawable/microphone"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <CheckBox
+                        android:id="@+id/pop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Pop"
+                        android:textColor="@color/colorWhite"
+                        android:theme="@style/coloured_Checkbox"
+                        android:onClick="onCheckboxClicked"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--End of Second Row-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
